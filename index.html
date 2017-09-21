@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Store House</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<meta content="" name="" />
+	<meta content="" name="" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	<script src="myscript.js" type="text/javascript"></script>
+	<link rel='stylesheet' type='text/css' href="mystyle.css">
+</head>
+<body>
+
+<div id='top'></div>
+
+
+<!-- Header and Search Box -->
+<nav class='navbar navbar-inverse' style='margin-bottom:0px;>
+	<div class='container-fluid'>
+		<div class='navbar-header'>
+			<button type='button' class='navbar-toggle' data-toggle='collapse' data-target="#myNavbar">
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+				<span class='icon-bar'></span>
+			</button>
+			<a class='navbar-brand' href='index.html'>Store-house</a>
+		</div>
+		<div class='collapse navbar-collapse' id='myNavbar'>	
+
+			<ul class='nav navbar-nav navbar-right'>
+				<li><a href='#'>My Orders &nbsp;<span class='badge pull-right' style='background-color:white;color:black;'>5</span></a></li>
+				<li><a href='#'>My Wishlist &nbsp;<span class='badge pull-right' style='background-color:white;color:black;'>3</span></a></li>
+				<li><a href='#'>My Cart &nbsp;<span class='badge pull-right' style='background-color:white;color:black;'>6</span></a></li>
+				<li><a href='#'>My Account</a></li>
+				<li><a href='#'><span class='glyphicon glyphicon-log-in'>&nbsp;Log In</span></a></li>
+			</ul>
+
+		</div>
+	</div>
+	<div class='container-fluid nav-not-fixed' id='topnavbar'>
+		<div class='row' >
+			<div class='col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+				<form>
+					<div class='input-group' style='position:relative;'>
+						<input type='text' class='form-control' placeholder='search' name='q' id='search'/>
+						<ul class='list-group searchhint' style='position:absolute;z-index:2;top:35px;width:100%;font-size:.9em;'>
+						</ul>
+						<div class='input-group-btn'>
+							<button class='btn btn-default' type='button' id='rembtn'>
+								<i class='glyphicon glyphicon-remove'></i>
+							</button>
+							<button class='btn btn-default' type='submit'>
+								<i class='glyphicon glyphicon-search'></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class='col-xs-4 col-sm-2 col-md-1 col-lg-1' style='margin:8px 0 5px;'>
+				<div class='dropdown'>
+					<a href='#' class='dropdown-toggle' data-toggle='dropdown' style='color:white;'>Eatables&nbsp;<span class='caret'></span></a>
+					<ul class='dropdown-menu'>	
+						<li><a href='#'>Fruits</a></li>
+						<li class='divider'></li>
+						<li><a href='#'>Vegetables</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='col-xs-4 col-sm-2 col-md-1 col-lg-1' style='margin:8px 0 5px;'>
+				<div class='dropdown'>
+					<a href='#' class='dropdown-toggle' data-toggle='dropdown' style='color:white;'>Grocery&nbsp;<span class='caret'></span></a>
+					<ul class='dropdown-menu'>	
+						<li><a href='#'>Lentils, Wheat, Rice</a></li>
+						<li class='divider'></li>
+						<li><a href='#'>Biscuits, Namkeens</a></li>
+						<li class='divider'></li>
+						<li><a href='#'>Spices</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class='col-xs-4 col-sm-2 col-md-1 col-lg-1' style='margin:8px 0 5px;'>
+				<a href='#' style='color:white;'>Medicine</a>
+			</div>
+		</div>
+	</div>
+</nav>
+<!-- Header and Search Box -->
+
+
+
+<!-- Body Content -->
+<div class='row' style='margin:.25em;'>
+	<!-- column -->
+	<div class='col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+
+		<div class='panel-group' id='accordion' style='margin:1em auto;'>
+			<div class='panel panel-primary' style='border:0px;'>
+				<div class='panel-heading'>
+					<h4 class='panel-title'>
+						<a href='#collapse1' data-toggle='collapse' data-parent='#accordion'>Choclates
+							<span style='float:right;font-size:1em;'>view</span>
+						</a>
+					</h4>
+				</div>
+				<div class='panel-collapse collapse in' id='collapse1'>
+					<div class='panel-body'>
+						<!-- object -->
+						<div class='media' style='padding:.5em;border:1px dashed green;'>
+							<div class='media-left'>
+								<img src='images/2115.jpg' class='media-object' style='width:70px;height:80px;'/>
+							</div>
+							<div class='media-body'>
+								<h4 class='media-heading pname'>Orange</h4>
+								<p style='margin:0;'><span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span></p>
+								<button class='btn btn-success btn-sm cartbtn' data-title='' data-id=''>Add To Cart</button>
+							</div>
+						</div>
+						<!-- object -->
+						<!-- object -->
+						<div class='media' style='padding:.5em;border:1px dashed green;'>
+							<div class='media-left'>
+								<img src='images/2115.jpg' class='media-object' style='width:70px;height:80px;'/>
+							</div>
+							<div class='media-body'>
+								<h4 class='media-heading'>Orange</h4>
+								<p style='margin:0;'><span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span></p>
+								<button class='btn btn-success btn-sm cartbtn' data-title='' data-id=''>Add To Cart</button>
+							</div>
+						</div>
+						<!-- object -->
+						<!-- object -->
+						<div class='media' style='padding:.5em;border:1px dashed green;'>
+							<div class='media-left'>
+								<img src='images/2115.jpg' class='media-object' style='width:70px;height:80px;'/>
+							</div>
+							<div class='media-body'>
+								<h4 class='media-heading'>Orange</h4>
+								<p style='margin:0;'><span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span></p>
+								<button class='btn btn-success btn-sm cartbtn' data-title='' data-id=''>Add To Cart</button>
+							</div>
+						</div>
+						<!-- object -->
+					</div>
+				</div>
+			</div>
+
+			<div class='panel panel-primary' style='border:0px;'>
+				<div class='panel-heading'>
+					<h4 class='panel-title'>
+						<a href='#collapse2' data-toggle='collapse' data-parent='#accordion'>Spices
+							<span style='float:right;font-size:1em;'>view</span>
+						</a>
+					</h4>
+				</div>
+				<div class='panel-collapse collapse' id='collapse2'>
+					<div class='panel-body'>
+						<!-- object -->
+						<div class='media' style='padding:.5em;border:1px dashed green;'>
+							<div class='media-left'>
+								<img src='images/2115.jpg' class='media-object' style='width:70px;height:80px;'/>
+							</div>
+							<div class='media-body'>
+								<h4 class='media-heading'>Orange</h4>
+								<p style='margin:0;'><span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span></p>
+								<button class='btn btn-success btn-sm cartbtn' data-title='' data-id=''>Add To Cart</button>
+							</div>
+						</div>
+						<!-- object -->
+					</div>
+				</div>
+			</div>
+
+			<div class='panel panel-primary' style='border:0px;'>
+				<div class='panel-heading'>
+					<h4 class='panel-title'>
+						<a href='#collapse3' data-toggle='collapse' data-parent='#accordion'>Biscuits
+							<span style='float:right;font-size:1em;'>view</span>
+						</a>
+					</h4>
+				</div>
+				<div class='panel-collapse collapse' id='collapse3'>
+					<div class='panel-body'>
+						<!-- object -->
+						<div class='media' style='padding:.5em;border:1px dashed green;'>
+							<div class='media-left'>
+								<img src='images/2115.jpg' class='media-object' style='width:70px;height:80px;'/>
+							</div>
+							<div class='media-body'>
+								<h4 class='media-heading'>Orange</h4>
+								<p style='margin:0;'><span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span></p>
+								<button class='btn btn-success btn-sm cartbtn' data-title='' data-id=''>Add To Cart</button>
+							</div>
+						</div>
+						<!-- object -->
+					</div>
+				</div>
+			</div>
+
+			<div class='panel panel-primary' style='border:0px;'>
+				<div class='panel-heading'>
+					<h4 class='panel-title'>
+						<a href='#collapse4' data-toggle='collapse' data-parent='#accordion'>Chips
+							<span style='float:right;font-size:1em;'>view</span>
+						</a>
+					</h4>
+				</div>
+				<div class='panel-collapse collapse' id='collapse4'>
+					<div class='panel-body'>
+						<!-- object -->
+						<div class='media' style='padding:.5em;border:1px dashed green;'>
+							<div class='media-left'>
+								<img src='images/2115.jpg' class='media-object' style='width:70px;height:80px;'/>
+							</div>
+							<div class='media-body'>
+								<h4 class='media-heading'>Orange</h4>
+								<p style='margin:0;'><span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span></p>
+								<button class='btn btn-success btn-sm cartbtn' data-title='' data-id=''>Add To Cart</button>
+							</div>
+						</div>
+						<!-- object -->
+					</div>
+				</div>
+			</div>
+
+			<div class='panel panel-primary' style='border:0px;'>
+				<div class='panel-heading'>
+					<h4 class='panel-title'>
+						<a href='#collapse5' data-toggle='collapse' data-parent='#accordion'>Protein Diet
+							<span style='float:right;font-size:1em;'>view</span>
+						</a>
+					</h4>
+				</div>
+				<div class='panel-collapse collapse' id='collapse5'>
+					<div class='panel-body'>
+						<!-- object -->
+						<div class='media' style='padding:.5em;border:1px dashed green;'>
+							<div class='media-left'>
+								<img src='images/2115.jpg' class='media-object' style='width:70px;height:80px;'/>
+							</div>
+							<div class='media-body'>
+								<h4 class='media-heading'>Orange</h4>
+								<p style='margin:0;'><span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span></p>
+								<button class='btn btn-success btn-sm cartbtn' data-title='Orange' data-id='12'>Add To Cart</button>
+							</div>
+						</div>
+						<!-- object -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- column -->
+	<!-- column -->
+	<div class='col-xs-12 col-sm-8 col-md-9 col-lg-9'>
+		<div class='panel panel-danger' style='margin:1em auto;'>
+			<div class='panel-heading'>
+				<span style='font-size:1.2em;'>Fruits</span>
+				<a href='#' style='font-size:1.1em;color:black;float:right;'>view all</a>
+			</div>
+			<div class='panel-body'>
+				<div class='row'>
+					<!-- object -->
+					<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+						<div class='thumbnail'>
+							<img src='images/clock.jpg' alt='image not found' class='imgobject' style='width:100%;height:150px;' />
+							<div class='caption'>
+								<p style='margin:0;padding:0;'>
+									<span style='color:grey;font-size:125%;'>
+										<a href='#'>Potato</a>
+									</span><br/>
+									<span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span>
+								</p>
+							</div>
+							<a href='#' class='cartbtn' data-title='Potato' data-id='12'>
+								<span class='glyphicon glyphicon-shopping-cart carthide'></span>
+							</a>
+							<a href='#'>
+								<span class='glyphicon glyphicon-heart hearthide'></span>
+							</a>
+							<span class='label label-success discountlabel'>10% off</span>
+						</div>
+					</div>
+					<!-- object -->
+					<!-- object -->
+					<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+						<div class='thumbnail'>
+							<img src='images/clock.jpg' alt='image not found' class='imgobject' style='width:100%;height:150px;' />
+							<div class='caption'>
+								<p style='margin:0;padding:0;'>
+									<span style='color:grey;font-size:125%;'>
+										<a href='#'>Potato</a>
+									</span><br/>
+									<span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span>
+								</p>
+							</div>
+							<a href='#' class='cartbtn' data-title='Potato' data-id='12'>
+								<span class='glyphicon glyphicon-shopping-cart carthide'></span>
+							</a>
+							<a href='#'>
+								<span class='glyphicon glyphicon-heart hearthide'></span>
+							</a>
+							<span class='label label-success discountlabel'>10% off</span>
+						</div>
+					</div>
+					<!-- object -->
+					<!-- object -->
+					<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+						<div class='thumbnail'>
+							<img src='images/clock.jpg' alt='image not found' class='imgobject' style='width:100%;height:150px;' />
+							<div class='caption'>
+								<p style='margin:0;padding:0;'>
+									<span style='color:grey;font-size:125%;'>
+										<a href='#'>Potato</a>
+									</span><br/>
+									<span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span>
+								</p>
+							</div>
+							<a href='#' class='cartbtn' data-title='Potato' data-id='12'>
+								<span class='glyphicon glyphicon-shopping-cart carthide'></span>
+							</a>
+							<a href='#'>
+								<span class='glyphicon glyphicon-heart hearthide'></span>
+							</a>
+							<span class='label label-success discountlabel'>10% off</span>
+						</div>
+					</div>
+					<!-- object -->
+				</div>
+			</div>
+		</div>
+
+		<div class='panel panel-success' style='margin:1em auto;'>
+			<div class='panel-heading'>
+				<span style='font-size:1.2em;'>Vegetables</span>
+				<a href='#' style='font-size:1.1em;color:black;float:right;'>view all</a>
+			</div>
+			<div class='panel-body'>
+				<div class='row'>
+					<!-- object -->
+					<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+						<div class='thumbnail'>
+							<img src='images/clock.jpg' alt='image not found' class='imgobject' style='width:100%;height:150px;' />
+							<div class='caption'>
+								<p style='margin:0;padding:0;'>
+									<span style='color:grey;font-size:125%;'>
+										<a href='#'>Potato</a>
+									</span><br/>
+									<span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span>
+								</p>
+							</div>
+							<a href='#' class='cartbtn' data-title='Potato' data-id='12'>
+								<span class='glyphicon glyphicon-shopping-cart carthide'></span>
+							</a>
+							<a href='#'>
+								<span class='glyphicon glyphicon-heart hearthide'></span>
+							</a>
+							<span class='label label-success discountlabel'>10% off</span>
+						</div>
+					</div>
+					<!-- object -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- column -->
+</div>
+<!-- Body Content -->
+
+
+
+<!-- Carousel Add -->
+<div class='carousel slide hidden-lg hidden-md hidden-sm' id='myCarousel' data-ride='carousel' data-interval='4000'  style='padding:1em;background-color:rgba(0,0,0,0.1);'>
+	<ol class='carousel-indicators'>	
+		<li data-target='#myCarousel' data-slide-to='0' class='active'></li>
+		<li data-target='#myCarousel' data-slide-to='1' class='active'></li>
+		<li data-target='#myCarousel' data-slide-to='2' class='active'></li>
+	</ol>
+	<div class='carousel-inner'>
+		<div class='item active'>
+			<div style='position:relative;'>
+				<img class='img-responsive' src='images/2115.jpg' alt='Image not found!' style='height:150px;width:100%;'/>
+				<p style='position:absolute;top:8px;left:1em;color:white;font-size:1.1em;'>Makhan Bhog Aata</p>
+				<p style='position:absolute;top:28px;left:1em;color:white;font-size:1.1em;'><strong>Upto 12 Sept., 12 Noon</strong></p>
+				<p style='position:absolute;top:55px;left:1em;font-size:1.1em;background-color:white;color:black;border-radius:3px;padding:2px 8px;font-weight:bold;'>12% Off</p>
+				<p style='position:absolute;top:85px;left:1.6em;color:white;font-size:.8em;'>Hurry Up Offer</p>
+			</div>
+		</div>
+		<div class='item'>
+			<div style='position:relative;'>
+				<img class='img-responsive' src='images/clock.jpg' alt='Image not found!' style='height:150px;width:100%;'/>
+				<p style='position:absolute;top:8px;left:1em;color:white;font-size:1.1em;'>Makhan Bhog Aata</p>
+				<p style='position:absolute;top:28px;left:1em;color:white;font-size:1.1em;'><strong>Upto 12 Sept., 12 Noon</strong></p>
+				<p style='position:absolute;top:55px;left:1em;font-size:1.1em;background-color:white;color:black;border-radius:3px;padding:2px 8px;font-weight:bold;'>12% Off</p>
+				<p style='position:absolute;top:85px;left:1.6em;color:white;font-size:.8em;'>Hurry Up Offer</p>
+			</div>
+		</div>
+		<div class='item'>
+			<div style='position:relative;'>
+				<img class='img-responsive' src='images/2115.jpg' alt='Image not found!' style='height:150px;width:100%;'/>
+				<p style='position:absolute;top:8px;left:1em;color:white;font-size:1.1em;'>Makhan Bhog Aata</p>
+				<p style='position:absolute;top:28px;left:1em;color:white;font-size:1.1em;'><strong>Upto 12 Sept., 12 Noon</strong></p>
+				<p style='position:absolute;top:55px;left:1em;font-size:1.1em;background-color:white;color:black;border-radius:3px;padding:2px 8px;font-weight:bold;'>12% Off</p>
+				<p style='position:absolute;top:85px;left:1.6em;color:white;font-size:.8em;'>Hurry Up Offer</p>
+			</div>
+		</div>
+	</div>
+	<a class='left carousel-control' href='#myCarousel' data-slide='prev'>
+		<span class='glyphicon glyphicon-chevron-left'></span>
+		<span class='sr-only'>Previous</span>
+	</a>
+	<a class='right carousel-control' href='#myCarousel' data-slide='next'>
+		<span class='glyphicon glyphicon-chevron-right'></span>
+		<span class='sr-only'>Next</span>
+	</a>
+</div>
+<!-- Carousel Add -->
+
+
+<!-- Banner Add -->
+<div class='container-fluid topbanner hidden-xs' style='margin:.25em 0 .25em;background-color:rgba(0,0,0,0.1);padding:2em 5px;'>
+	<div class='row'>
+		<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12 hidden-xs' style='position:relative;'>
+			<img class='img-responsive' src='images/2115.jpg' alt='Image not found!' style='height:150px;width:100%;'/>
+			<p style='position:absolute;top:8px;left:2em;color:white;font-size:1.1em;'>Makhan Bhog Aata</p>
+			<p style='position:absolute;top:28px;left:2em;color:white;font-size:1.1em;'><strong>Upto 12 Sept., 12 Noon</strong></p>
+			<p style='position:absolute;top:55px;left:2em;font-size:1.1em;background-color:white;color:black;border-radius:3px;padding:2px 8px;font-weight:bold;'>12% Off</p>
+			<p style='position:absolute;top:85px;left:2.6em;color:white;font-size:.8em;'>Hurry Up Offer</p>
+		</div>
+		<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12' style='position:relative;'>
+			<img class='img-responsive' src='images/clock.jpg' alt='Image not found!' style='height:150px;width:100%;'/>		
+			<p style='position:absolute;top:8px;left:2em;color:white;font-size:1.1em;'>Makhan Bhog Aata</p>
+			<p style='position:absolute;top:28px;left:2em;color:white;font-size:1.1em;'><strong>Upto 12 Sept., 12 Noon</strong></p>
+			<p style='position:absolute;top:55px;left:2em;font-size:1.1em;background-color:white;color:black;border-radius:3px;padding:2px 8px;font-weight:bold;'>12% Off</p>
+			<p style='position:absolute;top:85px;left:2.6em;color:white;font-size:.8em;'>Hurry Up Offer</p>
+		</div>
+		<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12 hidden-xs' style='position:relative;'>
+			<img class='img-responsive' src='images/2115.jpg' alt='Image not found!' style='height:150px;width:100%;'/>		
+			<p style='position:absolute;top:8px;left:2em;color:white;font-size:1.1em;'>Makhan Bhog Aata</p>
+			<p style='position:absolute;top:28px;left:2em;color:white;font-size:1.1em;'><strong>Upto 12 Sept., 12 Noon</strong></p>
+			<p style='position:absolute;top:55px;left:2em;font-size:1.1em;background-color:white;color:black;border-radius:3px;padding:2px 8px;font-weight:bold;'>12% Off</p>
+			<p style='position:absolute;top:85px;left:2.6em;color:white;font-size:.8em;'>Hurry Up Offer</p>
+		</div>
+	</div>
+</div>
+<!-- Banner Add -->
+
+
+
+
+<!-- Body Content -->
+<div class='row' style='margin:.25em;'>
+	<!-- column -->
+	<div class='col-xs-12 col-sm-4 col-md-3 col-lg-3'>
+
+
+	</div>
+	<!-- column -->
+	<!-- column -->
+	<div class='col-xs-12 col-sm-8 col-md-9 col-lg-9'>
+		<div class='panel panel-danger' style='margin:1em auto;'>
+			<div class='panel-heading'>
+				<span style='font-size:1.2em;'>Lentils</span>
+				<a href='#' style='font-size:1.1em;color:black;float:right;'>view all</a>
+			</div>
+			<div class='panel-body'>
+				<div class='row'>
+					<!-- object -->
+					<div class='col-lg-4 col-md-3 col-sm-4 col-xs-12'>
+						<div class='thumbnail'>
+							<img src='images/clock.jpg' alt='image not found' class='imgobject' style='width:100%;height:150px;' />
+							<div class='caption'>
+								<p style='margin:0;padding:0;'>
+									<span style='color:grey;font-size:125%;'>
+										<a href='#'>Potato</a>
+									</span><br/>
+									<span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span>
+								</p>
+							</div>
+							<a href='#' class='cartbtn' data-title='Potato' data-id='12'>
+								<span class='glyphicon glyphicon-shopping-cart carthide'></span>
+							</a>
+							<a href='#'>
+								<span class='glyphicon glyphicon-heart hearthide'></span>
+							</a>
+							<span class='label label-success discountlabel'>10% off</span>
+						</div>
+					</div>
+					<!-- object -->
+				</div>
+			</div>
+		</div>
+
+		<div class='panel panel-success' style='margin:1em auto;'>
+			<div class='panel-heading'>
+				<span style='font-size:1.2em;'>Wheat, Rice and Flour</span>
+				<a href='#' style='font-size:1.1em;color:black;float:right;'>view all</a>
+			</div>
+			<div class='panel-body'>
+				<div class='row'>
+					<!-- object -->
+					<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12'>
+						<div class='thumbnail'>
+							<img src='images/clock.jpg' alt='image not found' class='imgobject' style='width:100%;height:150px;' />
+							<div class='caption'>
+								<p style='margin:0;padding:0;'>
+									<span style='color:grey;font-size:125%;'>
+										<a href='#'>Potato</a>
+									</span><br/>
+									<span style='color:red;font-size:1.2em;'>Rs 10</span><span style='color:grey'> /1 kg</span>
+								</p>
+							</div>
+							<a href='#' class='cartbtn' data-title='Potato' data-id='12'>
+								<span class='glyphicon glyphicon-shopping-cart carthide'></span>
+							</a>
+							<a href='#'>
+								<span class='glyphicon glyphicon-heart hearthide'></span>
+							</a>
+							<span class='label label-success discountlabel'>10% off</span>
+						</div>
+					</div>
+					<!-- object -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- column -->
+</div>
+<!-- Body Content -->
+
+
+
+
+<!-- Register yourself -->
+<div class='container-fluid text-center' style='padding:1em 1em 2em;background-color:rgba(0,0,0,0.8);color:white;'>
+	<h4 class='text-uppercase' style='padding:0;margin:12px;'>sign up for our newsletter</h4>
+	<p class='text-capitalize'>become a smart shopper, don't miss out our orders and deals.</p>
+	<form>
+		<div class='input-group' style='max-width:420px;margin:auto;'>
+			<input type='email' class='form-control' placeholder='Enter your email '>
+			<div class='input-group-btn'>
+				<button class='btn btn-primary' type='submit'>
+					<span class='hidden-xs'>Subscribe</span>
+					<span class='hidden-lg hidden-md hidden-sm glyphicon glyphicon-envelope'></span>
+				</button>
+			</div>
+		</div>
+	</form>
+</div>
+<!-- Register yourself -->
+
+
+
+<!-- Footer Content -->
+<div class='container-fluid'>
+	<div class='row'>
+		<div class='col-xs-12 col-sm-4 col-md-4 col-lg-4'>
+			<h4>Company</h4>
+			<div class='list-group'>
+				<a href='about.html' class='list-group-item'><p class='list-group-item-text'>About Us</p></a>
+				<a href='about.html' class='list-group-item'><p class='list-group-item-text'>Careers at Store House</p></a>
+				<a href='about.html' class='list-group-item'><p class='list-group-item-text'>Privacy Policy</p></a>
+				<a href='about.html' class='list-group-item'><p class='list-group-item-text'>Terms & Conditions</p></a>
+				<a href='about.html' class='list-group-item'><p class='list-group-item-text'>Contact Us</p></a>
+			</div>
+		</div>
+		<div class='col-xs-12 col-sm-4 col-md-4 col-lg-4'>
+			<h4>Information</h4>
+			<div class='list-group'>
+				<a href='about.html' class='list-group-item' id='canreturn'><p class='list-group-item-text'>Cancellations, Returns & Refund</p></a>
+				<a href='about.html' class='list-group-item' id='deliverydetails'><p class='list-group-item-text'>Delivery Details</p></a>
+				<a href='about.html' class='list-group-item'><p class='list-group-item-text'>Faq's</p></a>
+			</div>
+		</div>
+		<div class='col-xs-12 col-sm-4 col-md-4 col-lg-4'>
+			<h4>Contact Us</h4>
+			<div class='list-group'>
+				<a href='contact.html' class='list-group-item'><p class='list-group-item-text'>+91 **********</p></a>
+				<a href='contact.html' class='list-group-item'><p class='list-group-item-text'>s***********@gmail.com</p></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Footer Content -->
+
+<div class='text-center' style='font-size:1em;background-color:rgba(0,0,0,0.2);padding:5px 0;word-spacing:2px;letter-spacing:1px;'>
+	&copy; 2017 StoreHouse.com All Rights Reserved
+</div>
+
+<a href='#top' id='goup' class='btn'>
+	<span class='glyphicon glyphicon-arrow-up'></span>
+</a>
+
+<!-- modals to show with jquery, you can keep it in separate file for DRY principle -->
+<div class='success-msg'>
+	<p style='font-size:1.5em;'>Success</p>
+	<span style=''>&times;</span> 
+	<p>We are going to south</p>
+</div>
+
+<div class='warning-msg'>
+	<p style='font-size:1.5em;' class='title'>Warning</p>
+	<span style=''>&times;</span> 
+	<p class='msg'>We are going to south</p>
+</div>
+
+<!-- cart modal to show -->
+<div class='modal fade' role='dialog' id='cartmodal'>
+	<div class='modal-dialog'>
+		<div class='modal-content'>
+			<div class='modal-header'>
+				<button type='button' class='close' data-dismiss='modal'>&times;</button>
+				<h4 class='modal-title'>Add To Cart</h4>
+			</div>
+			<div class='modal-body'>
+				<p></p>
+			</div>
+			<div class='modal-footer'>
+				<button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
